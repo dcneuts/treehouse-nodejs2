@@ -8,8 +8,11 @@ console.log('Server running on port 1337');
 
 //HTTP route GET and POST
 function homeRoute(request, response) {
-	response.writeHead(200, {'Content-Type': 'text/plain'});
-	response.write("Header\n");
-	response.write("Search\n");
-	response.end('Footer\n');
+	if(request.url === "/") {
+		response.writeHead(200, {'Content-Type': 'text/plain'});
+		response.write("Header\n");
+		response.write("Search\n");
+		response.end('Footer\n');
+	}
+
 }

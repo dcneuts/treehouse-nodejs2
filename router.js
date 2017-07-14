@@ -35,15 +35,14 @@ function user(request, response) {
 				javascriptPoints: profileJSON.points.JavaScript
 			}
 			//simple response
-
+			response.write(values.username + " has " + values.badges + " badges\n");
+			response.end('Footer\n');
 		});
 		//error handler
 		studentProfile.on("error", function (error) {
 			//show the error
-
+			response.end('Footer\n');
 		});
-		response.write(username + "\n");
-		response.end('Footer\n');
 	}
 }
 

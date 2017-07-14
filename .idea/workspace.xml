@@ -37,20 +37,10 @@
         <entry file="file://$PROJECT_DIR$/router.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="303">
-              <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+              <caret line="43" column="49" lean-forward="false" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example_profile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example_profile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="38" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -265,7 +255,7 @@
       <workItem from="1499932799314" duration="245000" />
       <workItem from="1499933112174" duration="697000" />
       <workItem from="1499934144716" duration="389000" />
-      <workItem from="1500009171377" duration="2916000" />
+      <workItem from="1500009171377" duration="3482000" />
     </task>
     <task id="LOCAL-00001" summary="Minor modifications to HTML files, also created instance of web server on localhost and confirmed it works">
       <created>1499755730776</created>
@@ -316,17 +306,23 @@
       <option name="project" value="LOCAL" />
       <updated>1500014781488</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Finished simple response for testing of Treehouse API">
+      <created>1500015039150</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1500015039150</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6493000" />
+    <option name="totallyTimeSpent" value="7059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -359,7 +355,8 @@
     <MESSAGE value="Split up server creation and handlers, made new file 'router.js' and placed handlers there, added REQUIRE statement in 'app.js' to reference it" />
     <MESSAGE value="Added exports to router.js, included those exports in app.js, and then fixed required Node.js pathway syntax to access a require()" />
     <MESSAGE value="Setting up the GET method for Treehouse data, defining specific JSON object variables, had to call length method on badges due to very large arrays, setting up error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting up the GET method for Treehouse data, defining specific JSON object variables, had to call length method on badges due to very large arrays, setting up error handling" />
+    <MESSAGE value="Finished simple response for testing of Treehouse API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished simple response for testing of Treehouse API" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -450,7 +447,7 @@
     <entry file="file://$PROJECT_DIR$/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
-          <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+          <caret line="43" column="49" lean-forward="false" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>

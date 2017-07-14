@@ -2,7 +2,7 @@
  * Created by Derek on 7/13/2017.
  */
 //HTTP route GET and POST
-function homeRoute(request, response) {
+function home(request, response) {
 	if(request.url === "/") {
 		response.writeHead(200, {'Content-Type': 'text/plain'});
 		response.write("Header\n");
@@ -12,7 +12,7 @@ function homeRoute(request, response) {
 }
 
 //Handle GET username
-function userRoute(request, response) {
+function user(request, response) {
 	var username = request.url.replace("/", "");
 	if(username.length > 0) {
 		response.writeHead(200, {'Content-Type': 'text/plain'});
@@ -21,3 +21,7 @@ function userRoute(request, response) {
 		response.end('Footer\n');
 	}
 }
+
+//Use this Node API to define what is exported and made available via require()
+module.exports.home = home;
+module.exports.user = user;

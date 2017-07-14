@@ -16,3 +16,13 @@ function homeRoute(request, response) {
 	}
 
 }
+//Handle GET username
+function userRoute(request, response) {
+	var username = request.url.replace("/", "");
+	if(username.length > 0) {
+		response.writeHead(200, {'Content-Type': 'text/plain'});
+		response.write("Header\n");
+		response.write(username + "\n");
+		response.end('Footer\n');
+	}
+}

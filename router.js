@@ -2,14 +2,15 @@
  * Created by Derek on 7/13/2017.
  */
 var Profile = require("./profile.js");
+var renderer = require("./renderer.js");
 
 //HTTP route GET and POST
 function home(request, response) {
 	if(request.url === "/") {
 		response.writeHead(200, {'Content-Type': 'text/plain'});
-		response.write("Header\n");
-		response.write("Search\n");
-		response.end('Footer\n');
+		renderer.view("header", {}, response);
+		renderer.view("search", {}, response);
+		renderer.view("footer", {}, response);
 	}
 }
 
@@ -18,7 +19,7 @@ function user(request, response) {
 	var username = request.url.replace("/", "");
 	if(username.length > 0) {
 		response.writeHead(200, {'Content-Type': 'text/plain'});
-		response.write("Header\n");
+		renderer.view("header", {}, response);
 
 		//JSON from Treehouse
 		var studentProfile = new Profile(username);
@@ -26,7 +27,6 @@ function user(request, response) {
 		//on end
 		studentProfile.on("end", function (profileJSON) {
 			//show profile
-
 			//store values from JSON object
 			var values = {
 				avatarUrl: profileJSON.gravatar_url,
@@ -35,14 +35,15 @@ function user(request, response) {
 				javascriptPoints: profileJSON.points.JavaScript
 			}
 			//simple response
-			response.write(values.username + " has " + values.badges + " badges\n");
-			response.end('Footer\n');
+			renderer.view("profile", values, response);
+			renderer.view("footer", {}, response);
 		});
 		//error handler
 		studentProfile.on("error", function (error) {
 			//show the error
-			response.write(error.message + "\n");
-			response.end('Footer\n');
+			renderer.view("error", {errorMessage: error.message}, response);
+			renderer.view("search", {}, response);
+			renderer.view("footer", {}, response);
 		});
 	}
 }

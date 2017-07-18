@@ -7,5 +7,5 @@ http.createServer(function(request, response) {
 	//Included from router.js file as exports
 	router.home(request, response);
 	router.user(request, response);
-}).listen(1337, '127.0.0.1');
+}).listen(1337);
 console.log('Server running on port 1337');

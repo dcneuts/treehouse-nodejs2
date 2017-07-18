@@ -34,7 +34,7 @@ function user(request, response) {
 				username: profileJSON.profile_name,
 				badges: profileJSON.badges.length,
 				javascriptPoints: profileJSON.points.JavaScript
-			}
+			};
 			//simple response
 			renderer.view("profile", values, response);
 			renderer.view("footer", {}, response);

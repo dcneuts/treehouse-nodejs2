@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c699b2f-7477-4a4a-9cb4-1a10f0b90a1a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/renderer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/router.js" afterPath="$PROJECT_DIR$/router.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -47,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -77,8 +75,8 @@
         <option value="$PROJECT_DIR$/designs/profile.html" />
         <option value="$PROJECT_DIR$/designs/index.html" />
         <option value="$PROJECT_DIR$/renderer.js" />
-        <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/router.js" />
       </list>
     </option>
   </component>
@@ -170,9 +168,10 @@
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/project/profile.js" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="javascript.nodejs.core.library.configured.version" value="6.11.1" />
+    <property name="two.files.diff.last.used.file" value="$USER_HOME$/Downloads/project/profile.js" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -284,7 +283,7 @@
       <workItem from="1499933112174" duration="697000" />
       <workItem from="1499934144716" duration="389000" />
       <workItem from="1500009171377" duration="3482000" />
-      <workItem from="1500357894675" duration="2337000" />
+      <workItem from="1500357894675" duration="2957000" />
     </task>
     <task id="LOCAL-00001" summary="Minor modifications to HTML files, also created instance of web server on localhost and confirmed it works">
       <created>1499755730776</created>
@@ -342,11 +341,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500015039150</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Attempted to reconfigure code and added renderer file to handle pulling user information and displaying it, along with additional project files. Will troubleshoot for next commit, as the script is not able to pull data.">
+      <created>1500360680601</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1500360680601</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9396000" />
+    <option name="totallyTimeSpent" value="10016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="1922" height="1086" extended-state="6" />
@@ -385,7 +391,8 @@
     <MESSAGE value="Added exports to router.js, included those exports in app.js, and then fixed required Node.js pathway syntax to access a require()" />
     <MESSAGE value="Setting up the GET method for Treehouse data, defining specific JSON object variables, had to call length method on badges due to very large arrays, setting up error handling" />
     <MESSAGE value="Finished simple response for testing of Treehouse API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished simple response for testing of Treehouse API" />
+    <MESSAGE value="Attempted to reconfigure code and added renderer file to handle pulling user information and displaying it, along with additional project files. Will troubleshoot for next commit, as the script is not able to pull data." />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempted to reconfigure code and added renderer file to handle pulling user information and displaying it, along with additional project files. Will troubleshoot for next commit, as the script is not able to pull data." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -492,22 +499,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -9,11 +9,17 @@ var commonHeaders = {'Content-Type': 'text/html'};
 //HTTP route GET and POST
 function home(request, response) {
 	if(request.url === "/") {
-		response.writeHead(200, commonHeaders);
-		renderer.view("header", {}, response);
-		renderer.view("search", {}, response);
-		renderer.view("footer", {}, response);
-		response.end();
+		if (request.method.toLowerCase() === "get") {
+			response.writeHead(200, commonHeaders);
+			renderer.view("header", {}, response);
+			renderer.view("search", {}, response);
+			renderer.view("footer", {}, response);
+			response.end();
+		} else {
+			request.on("data", function(postBody) {
+				console.log(postBody.toString());
+			});
+		}
 	}
 }
 

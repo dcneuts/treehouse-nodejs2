@@ -4,7 +4,7 @@
 var Profile = require("./profile.js");
 var renderer = require("./renderer.js");
 
-var commonHeaders = {'Content-Type': 'text/plain'};
+var commonHeaders = {'Content-Type': 'text/html'};
 
 //HTTP route GET and POST
 function home(request, response) {

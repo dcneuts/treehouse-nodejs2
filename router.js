@@ -3,6 +3,7 @@
  */
 var Profile = require("./profile.js");
 var renderer = require("./renderer.js");
+var querystring = require("querystring");
 
 var commonHeaders = {'Content-Type': 'text/html'};
 
@@ -17,7 +18,9 @@ function home(request, response) {
 			response.end();
 		} else {
 			request.on("data", function(postBody) {
-				console.log(postBody.toString());
+				var query = querystring.parse(postBody.toString());
+				response.write(query.username);
+				response.end();
 			});
 		}
 	}

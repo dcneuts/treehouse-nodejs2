@@ -19,7 +19,7 @@ function home(request, response) {
 		} else {
 			request.on("data", function(postBody) {
 				var query = querystring.parse(postBody.toString());
-				response.write(query.username);
+				response.writeHead(303, {"Location": "/" + query.username});
 				response.end();
 			});
 		}

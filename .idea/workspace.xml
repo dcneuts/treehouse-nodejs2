@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5c699b2f-7477-4a4a-9cb4-1a10f0b90a1a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/router.js" afterPath="$PROJECT_DIR$/router.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,7 +54,7 @@
       <file leaf-file-name="router.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
+            <state relative-caret-position="440">
               <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
@@ -258,7 +257,7 @@
       <workItem from="1500357894675" duration="5277000" />
       <workItem from="1500536261702" duration="21000" />
       <workItem from="1500536296048" duration="3356000" />
-      <workItem from="1500621380876" duration="268000" />
+      <workItem from="1500621380876" duration="330000" />
     </task>
     <task id="LOCAL-00001" summary="Minor modifications to HTML files, also created instance of web server on localhost and confirmed it works">
       <created>1499755730776</created>
@@ -358,11 +357,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500540685531</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Line 22 was added to redirect the input in this particular application to provide an appended output (redirect) to the username of the target query">
+      <created>1500621706698</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1500621706698</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15981000" />
+    <option name="totallyTimeSpent" value="16043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -407,7 +413,8 @@
     <MESSAGE value="Added commonHeaders variable to remove plain-text flags on multiple lines, can now replace with the variable" />
     <MESSAGE value="Modified to send buffer to console and then converted to string for testing" />
     <MESSAGE value="Attempt at parsing out the username from the actual body of the request, using querystring and properly terminated the response" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempt at parsing out the username from the actual body of the request, using querystring and properly terminated the response" />
+    <MESSAGE value="Line 22 was added to redirect the input in this particular application to provide an appended output (redirect) to the username of the target query" />
+    <option name="LAST_COMMIT_MESSAGE" value="Line 22 was added to redirect the input in this particular application to provide an appended output (redirect) to the username of the target query" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -640,7 +647,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
+        <state relative-caret-position="440">
           <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
